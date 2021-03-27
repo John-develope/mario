@@ -108,6 +108,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sp
         Bowser.ay = 500
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile11`, function (sprite, location) {
+    if (controller.down.isPressed()) {
+        tiles.setTilemap(tilemap`level7`)
+        scene.setBackgroundColor(15)
+    }
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     if (info.score() == 100) {
         otherSprite.destroy()
