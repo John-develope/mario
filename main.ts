@@ -146,8 +146,5 @@ controller.moveSprite(Super_mario, 100, 0)
 Super_mario.ay = 500
 scene.cameraFollowSprite(Super_mario)
 scene.setBackgroundColor(9)
-tiles.setTilemap(tilemap`level3`)
+tiles.setTilemap(tilemap`level`)
 tiles.placeOnRandomTile(Super_mario, assets.tile`tile11`)
-forever(function () {
-	
-})

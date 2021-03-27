@@ -2,7 +2,11 @@
     "name": "mario",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "palette": "*",
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.1",
+        "tilemaps": "github:microsoft/pxt-tilemaps#v1.11.0",
+        "darts": "*"
     },
     "files": [
         "main.blocks",
@@ -17,7 +21,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.4.28",
+        "target": "1.4.30",
         "targetId": "arcade"
     },
     "supportedTargets": [
