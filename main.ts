@@ -120,7 +120,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
         if (true) {
             game.over(true)
         }
-    } else if (info.score() == 10) {
+    } else if (info.score() != 100) {
         sprite.destroy()
         if (true) {
             game.over(false)
